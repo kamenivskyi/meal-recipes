@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
     <FoodList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import FoodList from "@/components/FoodList";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     FoodList,
   }
 }
