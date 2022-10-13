@@ -1,30 +1,21 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <FoodList />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import FoodList from "@/components/FoodList";
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    FoodList,
-  }
-}
+  name: "App",
+  components: {},
+  data: () => {
+    return {};
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 </style>
